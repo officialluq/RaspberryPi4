@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="hardknott"/>
+  <default sync-j="4" revision="kirkstone"/>
 
-  <remote fetch="https://git.yoctoproject.org/git"                  name="yocto"/>
+  <remote fetch="https://git.yoctoproject.org"                      name="yocto"/>
   <remote fetch="https://git.openembedded.org"                      name="oe"/>
-  <remote fetch="https://github.com/meta-qt5"                       name="QT5"/>
-  <remote fetch="https://github.com/sbabic"                         name="sbabic"/>
 
-  <project remote="yocto"     revision="1cefabe0f0a2dd2ca8b6eb83e8e0824b72da941a" upstream="hardknott"   name="poky"                    path="sources/poky">
+  <project remote="yocto"     revision="75239ddd8d67c00139c6e88c1c2a790b471b12c5" upstream="kirkstone"   name="poky"                    path="sources/poky">
       <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  <project remote="yocto"     revision="470da01b34b538d8b2a9bf9da512b89f4f76c7f9" upstream="hardknott"   name="meta-freescale"          path="sources/meta-freescale"/>
-  <project remote="oe"        revision="786d3aa313e31a718acc9611ba3adb60573ec458" upstream="hardknott"   name="meta-openembedded"       path="sources/meta-openembedded"/>
-  <project remote="oe"        revision="8db9e4f6ceae33d7a4f55453d31e69f9858af4eb" upstream="hardknott"   name="meta-python2"            path="sources/meta-python2"/>
-  <project remote="yocto"     revision="b4ec97e4eb8e36efd1f7e2f8ae020a9e55cfc239" upstream="hardknott"   name="meta-raspberrypi"        path="sources/meta-raspberrypi"/>
-
-  <project remote="QT5"       revision="43f8f539d40070a70fe89136db89bf5bb1dfe7ed" upstream="hardknott"   name="meta-qt5"                path="sources/meta-qt5"/>
-  <project remote="sbabic"    revision="7c2c51861110aa33497b193f9fb6248196296871" upstream="hardknott"   name="meta-swupdate"           path="sources/meta-swupdate"/>
+  <project remote="oe"        revision="df452d9d98659b49888fa8a5428a0a8bd3e3aaec" upstream="kirkstone"   name="meta-openembedded"       path="sources/meta-openembedded"/>
+  <project remote="oe"        revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" upstream="kirkstone"   name="meta-python2"            path="sources/meta-python2"/>
+  <project remote="yocto"     revision="2a06e4e84b04fc900f3a4524581548c9b5e57362" upstream="kirkstone"   name="meta-raspberrypi"        path="sources/meta-raspberrypi"/>
 
 </manifest>
